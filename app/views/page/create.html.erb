@@ -1,0 +1,20 @@
+<h1>Ingresado a la BD con exito!!!</h1>
+
+<%= params %>
+<h3>Se ha creado 
+<%= params[ :name ]  %> de 
+<%= params[ :age ]  %> años 
+<%= params[ :email]  %> </h3>
+
+<br><br>
+
+<h5>Hasta el momento los usuarios creados son:</h5>
+
+<% @users.each do |usuario| %>
+        <p> <%= usuario.id  %></p>
+        <p> <%= usuario.name  %></p>
+        <p> <%= usuario.age  %></p>
+        <p> <%= usuario.email  %></p>
+<%  end %>
+
+ 
